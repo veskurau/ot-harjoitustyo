@@ -10,3 +10,5 @@ Tässä ihan normaalia tekstiä **lihavoituna** ja *kursivoituna*.
 [gitlog.txt](https://github.com/veskurau/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 [komentorivi.txt](https://github.com/veskurau/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+
+Tämä teksti on lisätty paikallisesti.
