@@ -12,3 +12,8 @@ Tässä ihan normaalia tekstiä **lihavoituna** ja *kursivoituna*.
 [komentorivi.txt](https://github.com/veskurau/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 Tämä teksti on lisätty paikallisesti.
+
+## Dokumentaatio
+
+- [Vaatimusmäärittely](https://github.com/veskurau/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Työaikakirjanpito](https://github.com/veskurau/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
