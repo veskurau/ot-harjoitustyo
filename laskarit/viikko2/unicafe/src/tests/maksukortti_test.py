@@ -25,6 +25,3 @@ class TestMaksukortti(unittest.TestCase):
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 10.00 euroa")
         self.assertEqual(totuus, False)
 
-    # def test_rahan_ottaminen_palauttaa_oikean_totuusarvon(self):
-    #     self.maksukortti.ota_rahaa(1100)
-    #     self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 10.00 euroa")
