@@ -1,3 +1,5 @@
+## Viikko 3
+
 - Lisätty hakemistorakenne
 - Lisätty Player-luokka, joka kuvaa pelin pelaajia
 - Lisätty testejä Player-luokalle
