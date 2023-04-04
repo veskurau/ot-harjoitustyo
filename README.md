@@ -17,3 +17,4 @@ Tämä teksti on lisätty paikallisesti.
 
 - [Vaatimusmäärittely](https://github.com/veskurau/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](https://github.com/veskurau/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+- [Changelog](./dokumentaatio/changelog.md)
