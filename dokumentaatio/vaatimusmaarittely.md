@@ -13,7 +13,8 @@ Voidaan kuitenkin harkita tarvitaanko jonkinlainen ylläpitäjän rooli, joka es
 ## Perusversion tarjoama toiminnallisuus
 
 - Kysymyksiä voidaan lisätä tietokantaan
-- Voidaan valita kuinka monta pelaajaa pelaa
+- Aluksi vain yksi pelaaja pelaa peliä, mutta tavoitteena lisätä myös moninpeli
+- Aloitetaan tekstikäyttöliittymästä, jonka jälkeen tehdään siitä graafinen versio
 - Pelaaja heittää noppaa, jonka perusteella saadaan kysymys jostain aihealueesta sekä siihen liittyvät vastausvaihtoehdot
 - Pelaaja pyrkii valitsemaan oikean vaihtoehdon, jos vastaus on oikein, niin pelaajalle merkitään kyseisestä aihealueesta piste ja hän saa heittää noppaa uudestaan, väärästä vastauksesta ei saa pistettä ja vuoro siirtyy seuraavalle pelaajalle (jos sellainen on)
 - Kun pelaaja on vastannut kaikkiin aihealueisiin oikein, hän voittaa pelin 
