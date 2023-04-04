@@ -6,5 +6,5 @@ class Player:
         self.points = 0
 
     def __str__(self):
-        return f"nimi: {self.name}"
+        return f"nimi: {self.name}, pisteet: {self.points}"
       
