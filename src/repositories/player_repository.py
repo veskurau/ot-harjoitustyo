@@ -1,5 +1,6 @@
 from entities.player import Player
 
+
 class PlayerRepository:
     """ Luokka vastaa pelaajien tietokantaoperaatioista, 
         mutta alustavasti tiedot tallennetaan vain listaan/sanakirjaan

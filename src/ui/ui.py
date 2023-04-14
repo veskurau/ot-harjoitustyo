@@ -1,6 +1,7 @@
 # from entities.player import Player <- saatetaan tarvita myöhemmin
 from repositories.player_repository import PlayerRepository
 
+
 class UI:
     """ The interface which interacts with the player
     """
@@ -15,4 +16,3 @@ class UI:
         else:
             print("Tervetuloa pelaamaan ensikertalainen!")
             self.pelaajat.create(name)
-    
