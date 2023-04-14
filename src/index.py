@@ -1,10 +1,11 @@
 from ui.ui import UI
 
 def main():
-    ui = UI()
+    ui = UI() # pylint: disable=invalid-name
     ui.start()
 
 
 
 if __name__ == "__main__":
     main()
+    

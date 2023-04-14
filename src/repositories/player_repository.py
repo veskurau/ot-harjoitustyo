@@ -11,12 +11,10 @@ class PlayerRepository:
     def create(self, name: str):
         if name not in self.players:
             self.players[name] = Player(name)
-        else: 
+        else:
             print("Pelaaja on jo olemassa")
 
     def find_player(self, name: str):
         if name in self.players:
             return self.players[name]
-        else:
-            return None
-
+        return None

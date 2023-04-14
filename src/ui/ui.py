@@ -1,4 +1,4 @@
-from entities.player import Player
+# from entities.player import Player <- saatetaan tarvita myöhemmin
 from repositories.player_repository import PlayerRepository
 
 class UI:
@@ -9,11 +9,10 @@ class UI:
         self.pelaajat = PlayerRepository()
 
     def start(self):
-            name = str(input("Mikä on nimesi? "))
-            if self.pelaajat.find_player(name) is not None:
-                print("Tervetuloa uudestaan pelaamaan", name)
-            else: 
-                print("Tervetuloa pelaamaan ensikertalainen!")
-                self.pelaajat.create(name)   
-
+        name = str(input("Mikä on nimesi? "))
+        if self.pelaajat.find_player(name) is not None:
+            print("Tervetuloa uudestaan pelaamaan", name)
+        else:
+            print("Tervetuloa pelaamaan ensikertalainen!")
+            self.pelaajat.create(name)
     
