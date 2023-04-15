@@ -1,3 +1,6 @@
+# Voi olla että tätä luokkaa ei tarvita, vaan annetaan GameService luokan hoitaa vastaavat tehtävät,
+# mutta annetaan luokan olla vielä toistaikseksi olemassa
+
 class Game:
     """ Class represents a single game which the selected 
         players will play.

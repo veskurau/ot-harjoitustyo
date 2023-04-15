@@ -1,18 +1,27 @@
-from entities.game import Game
+# from entities.game import Game <- Ei luultavasti tarvita
 from entities.player import Player
 
 # Todennäköisesti joudutaan importaamaan myös repositoriot
 
 class GameService:
-    """The class responsible for the application logic."""
+    """The class responsible for the application logic and represents a single game which the selected 
+        players will play.
 
-    def __init__(self, game: Game):
+    Attributes:
+        player_scores: Dictionary, keeps track of the players in current game and their scores.
+    """
+
+    def __init__(self):
     # Täytyy varmaan lisätä attribuutteja, kuten repositoriot ainakin
-        self.game = game
+        self.player_scores = {}
 
-    def add_player(self, player: Player):
-        pass
+    def add_player(self, name: str):
+        new_player = Player(name)
+        if new_player.name not in self.player_scores:
+            self.player_scores[new_player.name] = new_player.points
 
     def throw_dice(self):
         pass
-    
+
+    def __str__(self):
+        return f"player_scores: {self.player_scores}"
