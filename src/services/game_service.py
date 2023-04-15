@@ -20,6 +20,9 @@ class GameService:
         if new_player.name not in self.player_scores:
             self.player_scores[new_player.name] = new_player.points
 
+    def get_player_score(self, name: str) -> str:
+        return self.player_scores[name]
+
     def throw_dice(self):
         pass
 
