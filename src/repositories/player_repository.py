@@ -2,9 +2,9 @@ from entities.player import Player
 
 
 class PlayerRepository:
-    """ Luokka vastaa pelaajien tietokantaoperaatioista, 
-        mutta alustavasti tiedot tallennetaan vain listaan/sanakirjaan
-    """
+    """ The class is responsible for the players database operations."""
+
+    # Alustavasti tiedot tallennettu vain listaan/sanakirjaan
 
     def __init__(self):
         self.players = {}
