@@ -4,8 +4,8 @@ from entities.player import Player
 # Todennäköisesti joudutaan importaamaan myös repositoriot
 
 class GameService:
-    """The class responsible for the application logic and represents a single game which the selected 
-        players will play.
+    """The class responsible for the application logic and represents a single game 
+        which the selected players will play.
 
     Attributes:
         player_scores: Dictionary, keeps track of the players in current game and their scores.

@@ -5,7 +5,7 @@ from services.game_service import GameService
 
 class UI:
     """ The interface which interacts with the player."""
-    
+
 
     def __init__(self):
         self.game = GameService()

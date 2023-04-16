@@ -6,6 +6,7 @@ Tietovisasovellus, jossa pelaaja heittää noppaa ja saa silmäluvun perusteella
 ## Dokumentaatio
 
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Arkkitehtuuri](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
 
@@ -37,4 +38,11 @@ Testikattavuusraportin luonti:
 
 ```bash
 poetry run invoke coverage-report
+```
+
+
+Pylint:
+
+```bash
+poetry run invoke lin
 ```
