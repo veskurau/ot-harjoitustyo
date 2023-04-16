@@ -38,5 +38,5 @@ class UI:
             print("Kiitos. Pelaajat on lisätty ja peli voi alkaa!")
             break
 
-        print("pelaajat:", self.game)
         print("Peli alkaa tästä....")
+        
