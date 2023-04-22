@@ -14,12 +14,13 @@ Voidaan kuitenkin harkita tarvitaanko jonkinlainen ylläpitäjän rooli, joka es
 
 - Luodaan tarvittava rakenne, kuten luokat ym. (tehty)
 - Aluksi vain yksi pelaaja pelaa peliä, mutta tavoitteena lisätä myös moninpeli (tehty)
-- Tallennetaan tiedot kysymyksistä ja muista tarvittavista tiedoista SQLite tietokantaan
-- Aloitetaan tekstikäyttöliittymästä, jonka jälkeen tehdään siitä graafinen versio
+- Tallennetaan tiedot kysymyksistä tiedostoon
+- Tallennetaan tiedot pelaajista SQLite-tietokantaan
 - Pelaaja heittää noppaa, jonka perusteella saadaan kysymys jostain aihealueesta sekä siihen liittyvät vastausvaihtoehdot
 - Pelaaja pyrkii valitsemaan oikean vaihtoehdon, jos vastaus on oikein, niin pelaajalle merkitään kyseisestä aihealueesta piste ja hän saa heittää noppaa uudestaan, väärästä vastauksesta ei saa pistettä ja vuoro siirtyy seuraavalle pelaajalle (jos sellainen on)
 - Kun pelaaja on vastannut kaikkiin aihealueisiin oikein, hän voittaa pelin 
 - Kysymyksiä voidaan lisätä tietokantaan
+- Aloitetaan tekstikäyttöliittymästä, jonka jälkeen tehdään siitä graafinen versio
 
 ## Jatkokehitysideoita
 

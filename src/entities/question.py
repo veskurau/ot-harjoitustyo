@@ -13,4 +13,4 @@ class Question:
         self.answers = answers
 
     def __str__(self):
-        return f"kysymys: {self.question}, vastausvaihtoehdot: {self.answers}"
+        return f"kysymys: {self.question}, kategoria: {self.category}, vastausvaihtoehdot: {self.answers}"

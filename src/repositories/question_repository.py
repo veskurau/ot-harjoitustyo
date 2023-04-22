@@ -1,4 +1,5 @@
 from entities.question import Question
+from config import QUESTIONS_FILE_PATH
 
 
 class QuestionRepository:
