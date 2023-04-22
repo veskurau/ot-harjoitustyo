@@ -9,7 +9,7 @@ Tietovisasovellus, jossa pelaaja heittää noppaa ja saa silmäluvun perusteella
 - [Arkkitehtuuri](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
-
+- [Release: Viikon 5 deadline](./releases/tag/viikko5)
 
 ## Komentorivitoiminnot
 
