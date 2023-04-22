@@ -15,3 +15,10 @@
 - Paketti- ja luokkakaavion luominen
 - Toiminnallisuuksien lisääminen GameService- ja UI-luokkiin
 - Ohjelma kysyy kuinka monta pelaajaa pelaa ja luo tämän perusteella Player-oliot
+
+## Viikko 5
+- Lisätty ensimmäinen release GitHubiin
+- Lisätty konfiguraatio tiedostoja ja otettu dotenv käyttöön
+- Kysymykset tallennettu csv-tiedostoon, josta ne voidaan lukea
+- Toiminnallisuuksien lisääminen, peli kysyy nyt kysymyksiä pelaajilta
+- Ui, service ja entities -luokat päivitetty liittyen kysymyksiin
