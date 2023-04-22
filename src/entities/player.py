@@ -1,5 +1,5 @@
 class Player:
-    """ Class represents a single player in the game
+    """ Class represents a single player in the game.
     """
 
     def __init__(self, name):
