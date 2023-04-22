@@ -6,11 +6,11 @@ from services.game_service import GameService
 class UI:
     """ The interface which interacts with the player."""
 
-
     def __init__(self):
         self.game = GameService()
 
     def start(self):
+        # The first view
         while True:
             print()
             print("Komennot: ")
@@ -26,17 +26,66 @@ class UI:
             else:
                 print("Anna validi komento!")
 
+        # Choosing the player count
         while True:
             print()
-            count = int(input("Montako pelaajaa pelaa (1-5 pelaajaa): "))
-            if count not in [1,2,3,4,5]:
+            try:
+                count = int(input("Montako pelaajaa pelaa (1-5 pelaajaa): "))
+            except ValueError:
+                print("Anna vastaus numerona!")
+                continue
+            if count not in [1, 2, 3, 4, 5]:
                 print("Anna validi pelaajamäärä (1-5 pelaajaa)!")
                 continue
-            for i in range(1,count+1):
+            for i in range(1, count+1):
                 name = str(input(f"Pelaajan {i} nimi: "))
                 self.game.add_player(name)
-            print("Kiitos. Pelaajat on lisätty ja peli voi alkaa!")
+            print("Kiitos. Pelaajat on lisätty.")
+            print(
+                "Ensimmäisenä kaikkiin kahdeksaan aihealueeseen vastannut pelaaja voittaa pelin!")
             break
 
-        print("Peli alkaa tästä....")
-        
+        # Starting the actual rounds
+        while True:
+            # Choosing a player and a question
+            for name in self.game.player_scores:
+                print()
+                print()
+                print("Seuraavana vuorossa on", name)
+                question = self.game.get_question()
+                print("Kategoriasi on:", question.category)
+                print()
+                print("Kysymyksesi on:")
+                print(question.question)
+                print()
+                print("Vastausvaihtoehtosi ovat:")
+                i = 1
+                for answer in question.answers:
+                    print(f"{i}) {answer}")
+                    i += 1
+                # Checking the players answer
+                while True:
+                    print()
+                    try:
+                        action = int(input("Anna vastauksesi: "))
+                    except ValueError:
+                        print("Anna vastaus numerona!")
+                        continue
+                    if action <= 0 or action > len(question.answers):
+                        print("Anna oikea numero!")
+                        continue
+                    print()
+                    if question.correct_answer == action:
+                        print(f"Vastaus {action} oli oikein!")
+                        self.game.player_scores[name].append(question.category)
+                    else:
+                        print(
+                            f"Vastauksesi {action} oli valitettavasti väärin. Oikea vastaus olisi ollut {question.correct_answer}")
+                    break
+            print()
+            print("Pelitilanne on seuraavanlainen:")
+            self.game.print_scores()
+            if self.game.someone_has_full_score()[0]:
+                print(
+                    f"ONNEKSI OLKOON {self.game.someone_has_full_score()[1]}, OLET VOITTAJA!")
+                break
