@@ -22,3 +22,6 @@
 - Kysymykset tallennettu csv-tiedostoon, josta ne voidaan lukea
 - Toiminnallisuuksien lisääminen, peli kysyy nyt kysymyksiä pelaajilta
 - Ui, service ja entities -luokat päivitetty liittyen kysymyksiin
+- Lisätty testejä kysymyksiin liittyvien toiminnallisuuksien osalta
+- Koodin laadun tarkatus, formatointi ja linttaus
+- Luotu sekvenssikaavio kysymysten hausta ja päivitetty arkkitehtuuri-kuvausta

@@ -1,6 +1,5 @@
 import random
-from collections import defaultdict
-# from entities.game import Game <- Ei luultavasti tarvita
+
 from entities.player import Player
 
 from repositories.question_repository import (

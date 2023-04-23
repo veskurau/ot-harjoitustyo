@@ -1,7 +1,7 @@
 import unittest
 from services.game_service import GameService
 from entities.question import Question
-from entities.player import Player
+# from entities.player import Player <- ei välttämättä tarvita
 
 
 class TestGameService(unittest.TestCase):
@@ -36,18 +36,21 @@ class TestGameService(unittest.TestCase):
         self.game_service.add_player("Pasi")
         self.game_service.add_correctly_answered_category("Pasi", "Maantiede")
         self.assertEqual(self.game_service.print_scores(),
-                         print("\nPelaajalla Pasi on 1/8 pistettä \nja hän on vastannut oikein aiheisiin: ['Maantiede']"))
+                         print("\nPelaajalla Pasi on 1/8 pistettä \n"
+                               "ja hän on vastannut oikein aiheisiin: ['Maantiede']"))
         self.game_service.add_correctly_answered_category(
             "Pasi", "Maantiede")  # When trying to add same category
         self.assertEqual(self.game_service.print_scores(),
-                         print("\nPelaajalla Pasi on 1/8 pistettä \nja hän on vastannut oikein aiheisiin: ['Maantiede']"))
+                         print("\nPelaajalla Pasi on 1/8 pistettä \n"
+                               "ja hän on vastannut oikein aiheisiin: ['Maantiede']"))
 
     def test_someone_has_full_score(self):
         self.game_service.add_player("Pasi")
         self.game_service.add_correctly_answered_category("Pasi", "Maantiede")
-        self.assertEqual(self.game_service.someone_has_full_score(), (False, None))
+        self.assertEqual(
+            self.game_service.someone_has_full_score(), (False, None))
         # Let's add 7 more strings to the list, so the score should be 8/8
         for i in range(7):
             self.game_service.add_correctly_answered_category("Pasi", str(i))
-        self.assertEqual(self.game_service.someone_has_full_score(), (True, "Pasi"))
-        
+        self.assertEqual(
+            self.game_service.someone_has_full_score(), (True, "Pasi"))

@@ -10,5 +10,7 @@
 | 16.04. | 5    | Syvempää tutustumista materiaaleihin, dokumentaation päivitys |
 | 22.04. | 2    | Ensimmäinen GitHub release, konfiguraatio-tiedostojen ja dotenv käyttöönotto |
 | 22.04. | 5    | Kysymyksiin liittyvät toiminnallisuuden lisääminen |
+| 23.04. | 3    | Lisätty testejä ja uutta toiminnallisuutta |
+| 23.04. | 2    | Koodin laadun tarkastus, sekvenssikaavion luonti ja dokumentaation päivitys |
 |  |     |  |
-| yht    | 29   | | 
+| yht    | 34   | | 

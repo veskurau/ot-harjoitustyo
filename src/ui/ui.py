@@ -1,5 +1,5 @@
-# from entities.player import Player <- saatetaan tarvita myöhemmin
-from repositories.player_repository import PlayerRepository
+# from entities.player import Player <- ei välttämättä tarvita
+# from repositories.player_repository import PlayerRepository <- ei välttämättä tarvita
 from services.game_service import GameService
 
 
@@ -48,7 +48,7 @@ class UI:
         # Starting the actual rounds
         while True:
             # Choosing a player and a question
-            for name, score in self.game.player_scores.items():
+            for name in self.game.player_scores:
                 answer_streak = True
                 while answer_streak is True:
                     question = self.game.get_question()
@@ -81,12 +81,14 @@ class UI:
                     print()
                     if question.correct_answer == action:
                         print(f"Vastaus {action} oli oikein!")
-                        self.game.add_correctly_answered_category(name, question.category)
+                        self.game.add_correctly_answered_category(
+                            name, question.category)
                     else:
                         print(
-                            f"Vastauksesi {action} oli valitettavasti väärin. Oikea vastaus olisi ollut {question.correct_answer}")
+                            f"Vastauksesi {action} oli valitettavasti väärin. "
+                            f"Oikea vastaus olisi ollut {question.correct_answer}")
                         answer_streak = False
-                
+
             print()
             print("Pelitilanne on seuraavanlainen:")
             self.game.print_scores()
