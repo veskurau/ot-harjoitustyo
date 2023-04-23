@@ -8,7 +8,7 @@ from repositories.question_repository import (
 )
 
 # Todennäköisesti joudutaan importaamaan myös repositoriot
-full_points = 8
+FULL_POINTS = 8
 
 
 class GameService:
@@ -21,7 +21,7 @@ class GameService:
 
     def __init__(self, question_repository=default_question_repository):
         # Täytyy varmaan lisätä attribuutteja, kuten repositoriot ainakin
-        self.player_scores = defaultdict(list)
+        self.player_scores = {}
         self.question_repository = question_repository
         self.questions = self.question_repository.get_all()
 
@@ -29,6 +29,10 @@ class GameService:
         new_player = Player(name)
         if new_player.name not in self.player_scores:
             self.player_scores[new_player.name] = []
+
+    def add_correctly_answered_category(self, player_name: str, category: str):
+        if category not in self.player_scores[player_name]:
+            self.player_scores[player_name].append(category)
 
     def get_player_scores(self):
         return self.player_scores
@@ -39,12 +43,12 @@ class GameService:
     def print_scores(self):
         for name, score in self.player_scores.items():
             print()
-            print(f"Pelaajalla {name} on {len(score)}/{full_points} pistettä")
+            print(f"Pelaajalla {name} on {len(score)}/{FULL_POINTS} pistettä")
             print(f"ja hän on vastannut oikein aiheisiin: {score}")
 
     def someone_has_full_score(self):
         for name, score in self.player_scores.items():
-            if len(score) == full_points:
+            if len(score) == FULL_POINTS:
                 return (True, name)
         return (False, None)
 

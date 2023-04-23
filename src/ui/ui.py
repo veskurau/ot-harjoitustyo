@@ -48,40 +48,45 @@ class UI:
         # Starting the actual rounds
         while True:
             # Choosing a player and a question
-            for name in self.game.player_scores:
-                print()
-                print()
-                print("Seuraavana vuorossa on", name)
-                question = self.game.get_question()
-                print("Kategoriasi on:", question.category)
-                print()
-                print("Kysymyksesi on:")
-                print(question.question)
-                print()
-                print("Vastausvaihtoehtosi ovat:")
-                i = 1
-                for answer in question.answers:
-                    print(f"{i}) {answer}")
-                    i += 1
-                # Checking the players answer
-                while True:
+            for name, score in self.game.player_scores.items():
+                answer_streak = True
+                while answer_streak is True:
+                    question = self.game.get_question()
                     print()
-                    try:
-                        action = int(input("Anna vastauksesi: "))
-                    except ValueError:
-                        print("Anna vastaus numerona!")
-                        continue
-                    if action <= 0 or action > len(question.answers):
-                        print("Anna oikea numero!")
-                        continue
+                    print()
+                    print("Seuraavana vuorossa on", name)
+
+                    print("Kategoriasi on:", question.category)
+                    print()
+                    print("Kysymyksesi on:")
+                    print(question.question)
+                    print()
+                    print("Vastausvaihtoehtosi ovat:")
+                    i = 1
+                    for answer in question.answers:
+                        print(f"{i}) {answer}")
+                        i += 1
+                    # Checking the players answer
+                    while True:
+                        print()
+                        try:
+                            action = int(input("Anna vastauksesi: "))
+                        except ValueError:
+                            print("Anna vastaus numerona!")
+                            continue
+                        if action <= 0 or action > len(question.answers):
+                            print("Anna oikea numero!")
+                            continue
+                        break
                     print()
                     if question.correct_answer == action:
                         print(f"Vastaus {action} oli oikein!")
-                        self.game.player_scores[name].append(question.category)
+                        self.game.add_correctly_answered_category(name, question.category)
                     else:
                         print(
                             f"Vastauksesi {action} oli valitettavasti väärin. Oikea vastaus olisi ollut {question.correct_answer}")
-                    break
+                        answer_streak = False
+                
             print()
             print("Pelitilanne on seuraavanlainen:")
             self.game.print_scores()
