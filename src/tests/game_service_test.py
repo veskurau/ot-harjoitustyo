@@ -11,7 +11,6 @@ class TestGameService(unittest.TestCase):
         self.game_service = GameService()
         pytest_configure()
 
-
     def situation_where_only_one_question(self):
         # Let's add only one question to the questions-list:
         # Maantiede;Mikä on Australian pääkaupunki?;Melbourne;Canberra;Sydney;Brisbane;2
@@ -34,7 +33,7 @@ class TestGameService(unittest.TestCase):
         return_value = self.game_service.get_question()
         self.assertEqual(str(return_value),
                          str(Question("Maantiede", "Mikä on Australian pääkaupunki?",
-                                        ["Melbourne", "Canberra", "Sydney", "Brisbane"], 2)))
+                                      ["Melbourne", "Canberra", "Sydney", "Brisbane"], 2)))
 
     def test_get_existing_players(self):
         self.game_service.add_player("Pasi")
@@ -42,7 +41,6 @@ class TestGameService(unittest.TestCase):
         players = self.game_service.get_existing_players()
         self.assertEqual(str(players[0]), "nimi: Pasi, voitot: 0")
         self.assertEqual(str(players[1]), "nimi: Kerttu, voitot: 0")
-
 
     def test_adding_correct_answers_and_printing_scores(self):
         self.game_service.add_player("Pasi")

@@ -5,11 +5,10 @@ from database_connection import get_database_connection
 
 class PlayerRepository:
     """The class is responsible for the players database operations.
-    
+
     Attributes:
         connection: Database connection object
     """
-
 
     def __init__(self, connection):
         """Class constructor.
@@ -28,7 +27,8 @@ class PlayerRepository:
         """
 
         cursor = self._connection.cursor()
-        cursor.execute("INSERT INTO Players (name,wins) VALUES (?,?)", [name, 0])
+        cursor.execute(
+            "INSERT INTO Players (name,wins) VALUES (?,?)", [name, 0])
         self._connection.commit()
 
     def add_win(self, name: str):
@@ -37,7 +37,7 @@ class PlayerRepository:
         Args:
             name (str): Players name.
         """
-        
+
         cursor = self._connection.cursor()
         cursor.execute("UPDATE Players SET wins=wins+1 WHERE name=?", [name])
         self._connection.commit()

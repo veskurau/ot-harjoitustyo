@@ -9,7 +9,6 @@ from repositories.player_repository import (
     player_repository as default_player_repository
 )
 
-# Todennäköisesti joudutaan importaamaan myös repositoriot
 FULL_POINTS = 8
 
 
@@ -28,7 +27,7 @@ class GameService:
     """
 
     def __init__(self, question_repository=default_question_repository,
-                player_repository=default_player_repository):
+                 player_repository=default_player_repository):
         """Class constructor, which creates a new game.
 
         Args:
@@ -61,7 +60,6 @@ class GameService:
             self.player_repository.create(new_player.name)
             self.players.append(new_player)
 
-
     def add_correctly_answered_category(self, player_name: str, category: str):
         """When player answeres a question correctly, 
             the category in question is added to the player_scores attribute.
@@ -75,6 +73,11 @@ class GameService:
             self.player_scores[player_name].append(category)
 
     def get_existing_players(self):
+        """Gets all the players from the players-list.
+
+        Returns:
+            list: Includes all the Player-objects
+        """
         return self.players
 
     def get_player_scores(self):
@@ -100,9 +103,6 @@ class GameService:
             print()
             print(f"Pelaajalla {name} on {len(score)}/{FULL_POINTS} pistettä")
             print(f"ja hän on vastannut oikein aiheisiin: {score}")
-
-
-
 
     def someone_has_full_score(self) -> tuple:
         """Checks if some has answered correctly for all the categories. 

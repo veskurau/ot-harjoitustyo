@@ -1,5 +1,3 @@
-# from entities.player import Player <- ei välttämättä tarvita
-# from repositories.player_repository import PlayerRepository <- ei välttämättä tarvita
 import subprocess
 import time
 from services.game_service import GameService
@@ -19,6 +17,7 @@ class UI:
 
     def start(self):
         """Starts up the game-interface for the player."""
+
         # The first view
         while True:
             print()
