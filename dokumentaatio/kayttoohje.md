@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Viimeisimmän version ohjelmasta löydät [täältä](https://github.com/veskurau/ot-harjoitustyo/releases)
+Viimeisimmän version ohjelmasta löydät [täältä](https://github.com/veskurau/ot-harjoitustyo/releases).
 
 ## Konfiguraatiot
 
@@ -18,7 +18,7 @@ poetry install
 
 2) Pelaaja-tietokannan alustaminen (luo database.sqlite-tiedoston data-kansioon) 
 
-Huom: Jos olet jo pelannut peliä ja tietoja on tallennettu database.sqlite-tiedostoon, niin tämä komento pyyhkii aiemmat tiedot
+    Huom: Jos olet jo pelannut peliä ja tietoja on tallennettu database.sqlite-tiedostoon, niin tämä komento pyyhkii aiemmat tiedot!
 
 ```bash
 poetry run invoke build

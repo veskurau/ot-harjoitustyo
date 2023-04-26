@@ -5,6 +5,7 @@ Tietovisasovellus, jossa pelaajat saa satunnaisesti tietyn aihealueen kysymyksi�
 
 ## Dokumentaatio
 
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuuri](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)

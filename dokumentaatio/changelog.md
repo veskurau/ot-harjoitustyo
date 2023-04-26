@@ -32,3 +32,7 @@
 - Tekstikäyttöliittymän luettavuuden parantaminen
 - Kysymysten lisääminen tietokantaan
 - Lisätty SQLite-tietokantayhteys pelaajien tallentamista varten. Uudet pelaajat lisätään automaattisesti tietokantaan, pelaajan voittaessa tietokantaan päivitetään hänen voittojen määrä
+- Uusien testien luominen ja vanhojen päivitys uusien toiminnallisuuksien osalta, kuten SQLite-tietokannan toiminta
+- Dokumentaation päivitys, arkkitehtuurikuvauksen laajentaminen ja käyttöohjeiden lisäys
+- Koodin laadun tarkastus
+- Uusin release

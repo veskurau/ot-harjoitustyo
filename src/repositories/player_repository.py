@@ -1,5 +1,4 @@
 from entities.player import Player
-from config import DATABASE_FILE_PATH
 from database_connection import get_database_connection
 
 
