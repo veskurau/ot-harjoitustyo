@@ -116,8 +116,7 @@ class UI:
     def _clear_view(self):
         """Clears the screen in text-interface"""
 
-        # subprocess.run("clear", check=True)
-        pass
+        subprocess.run("clear", check=True)
 
     def _print_existing_players(self):
         players = self.game.get_existing_players()

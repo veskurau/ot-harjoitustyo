@@ -59,6 +59,8 @@ class GameService:
         # If player is not in the database, let's add it straight to the database
         if new_player.name not in [player.name for player in self.players]:
             self.player_repository.create(new_player.name)
+            self.players.append(new_player)
+
 
     def add_correctly_answered_category(self, player_name: str, category: str):
         """When player answeres a question correctly, 

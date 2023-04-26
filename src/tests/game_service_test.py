@@ -1,12 +1,16 @@
 import unittest
 from services.game_service import GameService
 from entities.question import Question
+from tests.conftest import pytest_configure
 # from entities.player import Player <- ei välttämättä tarvita
 
 
 class TestGameService(unittest.TestCase):
+
     def setUp(self):
         self.game_service = GameService()
+        pytest_configure()
+
 
     def situation_where_only_one_question(self):
         # Let's add only one question to the questions-list:
@@ -28,9 +32,17 @@ class TestGameService(unittest.TestCase):
     def test_get_question_and_question_object(self):
         self.situation_where_only_one_question()
         return_value = self.game_service.get_question()
-        self.assertEqual(print(return_value),
-                         print(Question("Maantiede", "Mikä on Australian pääkaupunki?",
+        self.assertEqual(str(return_value),
+                         str(Question("Maantiede", "Mikä on Australian pääkaupunki?",
                                         ["Melbourne", "Canberra", "Sydney", "Brisbane"], 2)))
+
+    def test_get_existing_players(self):
+        self.game_service.add_player("Pasi")
+        self.game_service.add_player("Kerttu")
+        players = self.game_service.get_existing_players()
+        self.assertEqual(str(players[0]), "nimi: Pasi, voitot: 0")
+        self.assertEqual(str(players[1]), "nimi: Kerttu, voitot: 0")
+
 
     def test_adding_correct_answers_and_printing_scores(self):
         self.game_service.add_player("Pasi")

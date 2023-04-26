@@ -37,6 +37,7 @@ class PlayerRepository:
         Args:
             name (str): Players name.
         """
+        
         cursor = self._connection.cursor()
         cursor.execute("UPDATE Players SET wins=wins+1 WHERE name=?", [name])
         self._connection.commit()
@@ -51,6 +52,7 @@ class PlayerRepository:
         Returns:
             list: All the players as Player-objects. 
         """
+
         cursor = self._connection.cursor()
         cursor.execute("SELECT * FROM Players")
         rows = cursor.fetchall()

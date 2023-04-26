@@ -18,7 +18,7 @@ Voidaan kuitenkin harkita tarvitaanko jonkinlainen ylläpitäjän rooli, joka es
 - Pelaaja saa kysymyksen jostain aihealueesta sekä siihen liittyvät vastausvaihtoehdot (tehty)
 - Pelaaja pyrkii valitsemaan oikean vaihtoehdon, jos vastaus on oikein, niin pelaajalle merkitään kyseisestä aihealueesta piste ja hän saa jatkaa. Väärästä vastauksesta ei saa pistettä ja vuoro siirtyy seuraavalle pelaajalle. Jos pelaaja vastaa samaan aihealueeseen oikein, niin hän ei saa enempää pisteitä, mutta saa jatkaa vuoroaan (tehty)
 - Kun pelaaja on vastannut kaikkiin aihealueisiin oikein, hän voittaa pelin (tehty)
-- Tallennetaan tiedot pelaajista SQLite-tietokantaan
+- Tallennetaan tiedot pelaajista SQLite-tietokantaan (tehty)
 - Kysymyksiä voidaan lisätä tietokantaan
 - Aloitetaan tekstikäyttöliittymästä, jonka jälkeen tehdään siitä graafinen versio
 
