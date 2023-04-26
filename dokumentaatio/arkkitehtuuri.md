@@ -24,7 +24,7 @@ Pakkauksen repositories-luokat ovat vastuussa tietojen tallennuksesta. QuestionR
 
 ### Tiedostot
 
-Tieto kysymyksistä tallennetaan csv-tiedostoon, oletuksena data-kansiossa sijaitseva questions.csv -tiedosto. Juuressa sijaitsevaan .env tiedostoon on merkitty tiedostojen nimet. 
+Tieto kysymyksistä tallennetaan csv-tiedostoon, oletuksena data-kansiossa sijaitseva questions.csv -tiedosto. Juuressa sijaitsevaan .env-tiedostoon on merkitty tiedostojen nimet. 
 
 Tiedot on tallennettu csv-tiedostoon seuraavassa muodossa:
 Kategoria;Kysymys;Vastausvaihtoehto1;Vastausvaihtoehto2;Vastausvaihtoehto3;Vastausvaihtoehto4;Oikea vastaus numerona
@@ -35,7 +35,7 @@ Maantiede;Mikä on Australian pääkaupunki?;Melbourne;Canberra;Sydney;Brisbane;
 Vastausvaihtoehtoja voi periaatteessa olla kuinka monta tahansa, mutta käytännössä niitä on 2-4.
 
 
-Vastaavasti tieto pelaajista tallennetaan SQLite-tietokannan tauluun Players, josta löytyvät sarakkeet name ja wins. Tietokannan alustus tehdään initialize_database.py -tiedoston kautta. Yhteyden muodostamiseen tarvittavat tiedot on tallennettu databa_connection.py -tiedostoon.
+Vastaavasti tieto pelaajista tallennetaan SQLite-tietokannan tauluun Players, josta löytyvät sarakkeet name ja wins. Juuressa sijaitsevasta .env-tiedostosta löytyy tiedoston nimi. Tietokannan alustus tehdään initialize_database.py -tiedoston kautta. Yhteyden muodostamiseen tarvittavat tiedot on tallennettu databa_connection.py -tiedostoon.
 
 ## Päätoiminnallisuudet
 

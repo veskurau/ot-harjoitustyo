@@ -20,7 +20,7 @@ poetry install
 ```
 
 
-Käyttäjä-tietokannan alustaminen:
+Pelaaja-tietokannan alustaminen:
 
 ```bash
 poetry run invoke build
