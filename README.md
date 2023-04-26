@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-Tietovisasovellus, jossa pelaaja heittää noppaa ja saa silmäluvun perusteella jonkun aihealueen kysymyksen. Kaikkiin aihealueisiin oikein vastannut pelaaja voittaa pelin. 
+Tietovisasovellus, jossa pelaajat saa satunnaisesti tietyn aihealueen kysymyksiä. Kaikkiin aihealueisiin oikein vastannut pelaaja voittaa pelin. 
 
 
 ## Dokumentaatio
@@ -17,6 +17,13 @@ Riippuvuuksien asentaminen:
 
 ```bash
 poetry install
+```
+
+
+Käyttäjä-tietokannan alustaminen:
+
+```bash
+poetry run invoke build
 ```
 
 

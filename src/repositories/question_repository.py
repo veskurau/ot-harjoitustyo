@@ -3,7 +3,7 @@ from config import QUESTIONS_FILE_PATH
 
 
 class QuestionRepository:
-    """The class is responsible for the questions-database operations."""
+    """Class, responsible for the questions-database operations."""
 
     def __init__(self, file_path):
         """The constructor.
@@ -25,7 +25,13 @@ class QuestionRepository:
     def create(self):
         pass
 
-    def _read(self):
+    def _read(self) -> list:
+        """Reads the questions from a csv-file.
+
+        Returns:
+            list: With all the questions as Question-objects.
+        """
+
         questions = []
 
         with open(self._file_path, encoding="utf-8") as file:

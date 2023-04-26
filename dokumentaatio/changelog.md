@@ -25,3 +25,10 @@
 - Lisätty testejä kysymyksiin liittyvien toiminnallisuuksien osalta
 - Koodin laadun tarkatus, formatointi ja linttaus
 - Luotu sekvenssikaavio kysymysten hausta ja päivitetty arkkitehtuuri-kuvausta
+
+## Viikko 6
+- Lisätty docstring-kommentteja luokille, funktioille ja metodeille
+- Kysymysten loppuessa ladataan kysymykset uudestaan tietokannasta
+- Tekstikäyttöliittymän luettavuuden parantaminen
+- Kysymysten lisääminen tietokantaan
+- Lisätty SQLite-tietokantayhteys pelaajien tallentamista varten. Uudet pelaajat lisätään automaattisesti tietokantaan, pelaajan voittaessa tietokantaan päivitetään hänen voittojen määrä

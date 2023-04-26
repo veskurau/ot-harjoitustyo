@@ -12,5 +12,8 @@
 | 22.04. | 5    | Kysymyksiin liittyvät toiminnallisuuden lisääminen |
 | 23.04. | 3    | Lisätty testejä ja uutta toiminnallisuutta |
 | 23.04. | 2    | Koodin laadun tarkastus, sekvenssikaavion luonti ja dokumentaation päivitys |
+| 26.04. | 7    | Docstring, SQLite-tietokannan käyttöönotto, toiminnallisuusksien lisäys |
 |  |     |  |
-| yht    | 34   | | 
+|  |     |  |
+|  |     |  |
+| yht    | 41   | | 
