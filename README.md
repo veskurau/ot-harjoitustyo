@@ -11,6 +11,7 @@ Tietovisasovellus, jossa pelaajat saa satunnaisesti tietyn aihealueen kysymyksi√
 - [Ty√∂aikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
 - [Release: Viikon 5 deadline](https://github.com/veskurau/ot-harjoitustyo/releases/tag/viikko5)
+- [Release: Viikon 6 deadline](https://github.com/veskurau/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Komentorivitoiminnot
 
