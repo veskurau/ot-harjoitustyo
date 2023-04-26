@@ -14,12 +14,13 @@ Tietovisasovellus, jossa pelaajat saa satunnaisesti tietyn aihealueen kysymyksi√
 
 ## Komentorivitoiminnot
 
+### Asennus
+
 Riippuvuuksien asentaminen:
 
 ```bash
 poetry install
 ```
-
 
 Pelaaja-tietokannan alustaminen:
 
@@ -27,13 +28,13 @@ Pelaaja-tietokannan alustaminen:
 poetry run invoke build
 ```
 
-
 Ohjelman suorittaminen:
 
 ```bash
 poetry run invoke start
 ```
 
+### Muut komennot
 
 Testien ajo:
 
@@ -41,13 +42,11 @@ Testien ajo:
 poetry run invoke test
 ```
 
-
 Testikattavuusraportin luonti:
 
 ```bash
 poetry run invoke coverage-report
 ```
-
 
 Pylint:
 
