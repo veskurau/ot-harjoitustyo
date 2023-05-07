@@ -2,7 +2,6 @@ import unittest
 from services.game_service import GameService
 from entities.question import Question
 from tests.conftest import pytest_configure
-# from entities.player import Player <- ei välttämättä tarvita
 
 
 class TestGameService(unittest.TestCase):
@@ -34,6 +33,11 @@ class TestGameService(unittest.TestCase):
         self.assertEqual(str(return_value),
                          str(Question("Maantiede", "Mikä on Australian pääkaupunki?",
                                       ["Melbourne", "Canberra", "Sydney", "Brisbane"], 2)))
+        # Now when there are 0 questions left, the questions should be fetched
+        # again from the repository
+        self.assertEqual(len(self.game_service.questions), 0)
+        self.game_service.get_question()
+        self.assertGreater(len(self.game_service.questions), 0)
 
     def test_get_existing_players(self):
         self.game_service.add_player("Pasi")
@@ -59,8 +63,8 @@ class TestGameService(unittest.TestCase):
         self.game_service.add_correctly_answered_category("Pasi", "Maantiede")
         self.assertEqual(
             self.game_service.someone_has_full_score(), (False, None))
-        # Let's add 7 more strings to the list, so the score should be 8/8
-        for i in range(7):
+        # Let's add 5 more strings to the list, so the score should be 6/6
+        for i in range(5):
             self.game_service.add_correctly_answered_category("Pasi", str(i))
         self.assertEqual(
             self.game_service.someone_has_full_score(), (True, "Pasi"))

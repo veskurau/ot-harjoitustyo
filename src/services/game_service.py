@@ -80,9 +80,6 @@ class GameService:
         """
         return self.players
 
-    def get_player_scores(self):
-        return self.player_scores
-
     def get_question(self) -> "Question":
         """Gets a random question from the questions-list.
 
@@ -118,6 +115,3 @@ class GameService:
                 self.player_repository.add_win(name)
                 return (True, name)
         return (False, None)
-
-    def __str__(self):
-        return f"player_scores: {self.player_scores}"

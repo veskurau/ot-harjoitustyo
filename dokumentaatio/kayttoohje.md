@@ -33,7 +33,7 @@ poetry run invoke start
 
 ## Pelin aloitus
 
-Sinua pyydetään joko aloittamaan peli tai lisäämään kysymyksiä. Jos haluat pelaamaan, valitse aloita peli -vaihtoehto. Omia kysymyksiä voi lisätä toisesta vaihtoehdosta. 
+Sinua pyydetään joko aloittamaan peli, lisäämään kysymyksiä tai lopettamaan peli. Jos haluat pelaamaan, valitse aloita peli -vaihtoehto. Omia kysymyksiä voi toistaiseksi lisätä lisäämällä ne data-kansiossa sijaitsevaan csv-tiedostoon. 
 
 ## Pelaajien lisääminen
 
@@ -42,7 +42,7 @@ Valitse kuinka monta pelaajaa haluaa pelata (1-5). Anna tämän jälkeen pelaaji
 ## Pelin kulku
 
 Ohjelma esittää pelaajalle kysymyksiä ja pelaajan pitää valita oikea vastaus numerona. 
-Mikäli pelaaja vastaa kysymykseen oikein, niin hän saa jatkaa vuoroaan. Kun pelaaja vastaa uuteen aihealueeseen oikein, niin aihealue lisätään pelaajan tietoihin. Aihealueita on kuusi: maantiede, viihde, historia ja yhteiskunta, kirjallisuus ja taide, luonto ja tiede sekä urheilu ja vapaa-aika. 
+Mikäli pelaaja vastaa kysymykseen oikein, niin hän saa jatkaa vuoroaan. Kun pelaaja vastaa uuteen aihealueeseen oikein, niin aihealue lisätään pelaajan tietoihin oikein vastatuksi. Aihealueita on kuusi: maantiede, viihde, historia ja yhteiskunta, kirjallisuus ja taide, luonto ja tiede sekä urheilu ja vapaa-aika. 
 
 Kun koko kierros on käyty läpi, niin ohjelma näyttää mihin aihealueisiin kukin pelaaja on vastannut oikein. Se pelaaja joka ensin vastaa kaikkiin kuuteen aihealueeseen oikein, hän voittaa pelin. Hänen tietoihinsa lisätään myös yksi voitto lisää, joka näkyy seuraavan kerran kun aloitetaan uusi peli. 
 

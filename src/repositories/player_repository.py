@@ -31,7 +31,7 @@ class PlayerRepository:
         self._connection.commit()
 
     def add_win(self, name: str):
-        """When a player wins the game, its wins will be updated by 1. 
+        """When a player wins the game, its wins will be updated by +1. 
 
         Args:
             name (str): Players name.
@@ -40,10 +40,6 @@ class PlayerRepository:
         cursor = self._connection.cursor()
         cursor.execute("UPDATE Players SET wins=wins+1 WHERE name=?", [name])
         self._connection.commit()
-
-    def find_player(self, name: str):
-
-        pass
 
     def get_all(self) -> list:
         """Getting all the players from the SQLite-database.

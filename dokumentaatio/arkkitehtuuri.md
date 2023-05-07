@@ -51,4 +51,10 @@ Pelin alussa käyttöliittymä pyytää pelaajien nimet. Käyttöliittymä kutsu
 
 ### Pelin päättyminen
 
-Käyttöliittymä kutsuu jokaisella kierroksella GameServicen metodia someone_has_full_score. Mikäli metodi palauttaa arvon True, niin jollain pelaajalla on täydet 8/8 pistettä ja hän on voittanut pelin. Käyttöliittymä tulostaa käyttäjälle tiedon voitosta. Samalla GameService kutsuu PlayerRepository-luokan metodia add_win(name), joka lisää tietokantaan kyseiselle pelaajalle +1 wins sarakkeeseen. 
+Käyttöliittymä kutsuu jokaisella kierroksella GameServicen metodia someone_has_full_score. Mikäli metodi palauttaa arvon True, niin jollain pelaajalla on täydet 6/6 pistettä ja hän on voittanut pelin. Käyttöliittymä tulostaa käyttäjälle tiedon voitosta. Samalla GameService kutsuu PlayerRepository-luokan metodia add_win(name), joka lisää tietokantaan kyseiselle pelaajalle +1 wins sarakkeeseen. 
+
+## Ohjelman rakenteeseen jääneet heikkoudet
+
+### Käyttöliittymä
+
+Sovelluksen tekstikäyttöliittymä on melko karkea, graafinen käyttöliittymä toisi peliin lisämukavuutta. Käyttöliittymä on nyt toteutettu yhden tiedoston ja luokan sisään. Tässä olisi voinut olla mahdollista eriyttää koodia vielä erillisiin tiedostoihin/luokkiin. Koodi sisältää paikoittain myös melko paljon silmukoita ja ehtolauseita, näidenkin osalta koodia olisi voinut selkeyttää ja eriyttää toiminnallisuusksia vielä enemmän omien metodien alle. 

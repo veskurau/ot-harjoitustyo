@@ -14,16 +14,14 @@ class QuestionRepository:
 
         self._file_path = file_path
 
-    def get_all(self):
+    def get_all(self) -> list:
         """Returns all the questions.
 
         Returns:
-            Returns a list of Question-objects.
+            list: With all the questions as Question-objects.
         """
-        return self._read()
 
-    def create(self):
-        pass
+        return self._read()
 
     def _read(self) -> list:
         """Reads the questions from a csv-file.
