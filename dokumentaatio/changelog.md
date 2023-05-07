@@ -36,3 +36,10 @@
 - Dokumentaation päivitys, arkkitehtuurikuvauksen laajentaminen ja käyttöohjeiden lisäys
 - Koodin laadun tarkastus
 - Uusin release
+
+## Viikko 7
+- Käyttöliittymä-luokan päivitys, start-metodin jakaminen pienempiin osiin
+- Virheiden korjaaminen ja koodin siistiminen
+- Testien päivitys
+- Testidokumentin luonti
+- Muun dokumentaation päivitys loppupalautusta varten

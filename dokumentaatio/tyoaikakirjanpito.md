@@ -15,5 +15,7 @@
 | 25.04. | 7    | Docstring, SQLite-tietokannan käyttöönotto, toiminnallisuuksien lisäys |
 | 26.04. | 3    | Uusien testien luonti ja vanhojen päivitys uusien toiminnallisuuksien osalta |
 | 26.04. | 2    | Dokumentaation päivitys, koodin tarkastus, uusin release |
+| 07.05. | 3    | Käyttöliittymä-luokan päivitys, virheiden korjaus ja koodin siistiminen |
+| 07.05. | 3    | Testien päivitys, testidokumentin luonti, dokumentaation päivitys |
 |  |     |  |
-| yht    | 46   | | 
+| yht    | 52   | | 
