@@ -9,7 +9,7 @@ from repositories.player_repository import (
     player_repository as default_player_repository
 )
 
-FULL_POINTS = 8
+FULL_POINTS = 6
 
 
 class GameService:

@@ -2,7 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Trivial Pursuit tyyppinen tietovisasovellus. Pelaajat vuorotellen saavat tietyn aihealueen kysymyksen, johon yrittävät vastata oikein. Aihealueita on kahdeksan: maantiede, viihde, historia ja yhteiskunta, kirjallisuus ja taide, luonto ja tiede sekä urheilu ja vapaa-aika. 
+Trivial Pursuit tyyppinen tietovisasovellus. Pelaajat vuorotellen saavat tietyn aihealueen kysymyksen, johon yrittävät vastata oikein. Aihealueita on kuusi: maantiede, viihde, historia ja yhteiskunta, kirjallisuus ja taide, luonto ja tiede sekä urheilu ja vapaa-aika. 
 Kaikkiin aihealueisiin oikein vastannut pelaaja voittaa pelin. 
 
 ## Käyttäjät

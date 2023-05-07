@@ -30,7 +30,8 @@ class UI:
                 print("Tervetuloa pelaamaan!")
                 break
             elif action == "2":
-                print("Uusien kysymysten lisäys -toiminto tulee myöhemmin")
+                print("Uusien kysymysten lisäys -toiminto tulee peliin myöhemmin.")
+                print("Voit käydä lisäämässä kysymyksiä data-kansiossa olevaan csv-tiedostoon.")
             else:
                 print("Anna validi komento!")
 
@@ -99,7 +100,7 @@ class UI:
                             name, question.category)
                     else:
                         print(
-                            f"Vastauksesi {action} oli valitettavasti väärin. "
+                            f"Vastauksesi {action} oli valitettavasti väärin."
                             f"Oikea vastaus olisi ollut {question.correct_answer}")
                         answer_streak = False
                     time.sleep(4)
